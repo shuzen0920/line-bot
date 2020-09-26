@@ -43,13 +43,14 @@ def handle_message(event):
         sticker_id='1'
     )
 
-    emojis = [{"productId": "5ac1de17040ab15980c9b438",
+    emojis = [{"index":6,
+                "productId": "5ac1de17040ab15980c9b438",
                 "emojiId": "004"}
     ]
 
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text, emojis))
+        TextSendMessage(text=event.message.text, emojis=emojis))
         #sticker_message)
 
 if __name__ == "__main__":
