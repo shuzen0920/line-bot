@@ -39,7 +39,7 @@ def callback():
 def handle_message(event):
 
     sticker_message = StickerSendMessage(
-        package_id='445',
+        package_id='1',
         sticker_id='1'
     )
 
