@@ -50,7 +50,8 @@ def handle_message(event):
 
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text, emojis=emojis))
+        #TextSend
+        TextMessage(text=event.message.text, emojis=emojis))
         #sticker_message)
 
 if __name__ == "__main__":
